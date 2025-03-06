@@ -24,10 +24,6 @@ document.getElementById("submit").addEventListener("click", async function () {
 	}
 })
 
-document.getElementById("answer_two").addEventListener("click", function () {
-	alert("Подсказка в самом вверху справа)")
-})
-
 document.getElementById("submit_two").addEventListener("click", async function () {
 	const inputs = document.getElementById("answer_two").value
 
@@ -47,5 +43,14 @@ document.getElementById("submit_two").addEventListener("click", async function (
 			await sleep(300)
 			document.getElementById("answer_two").style.backgroundColor = "#851d1d"
 		}
+		document.querySelector(".zov").classList.remove("d-none")
+		document.querySelector(".zov").classList.add("d-grid")
+	}
+})
+
+document.getElementById("letsBody").addEventListener("click", function () {
+	confirm("Ты точно уверена?")
+	if ((confirm = "true")) {
+		window.open("present.html")
 	}
 })
