@@ -87,6 +87,38 @@
 					<source src="./img/Download.mp4" type="video/mp4" />
 				</video>
 			</div>
+			<div class="d-flex justify-content-center">
+				<button
+					type="button"
+					class="btn mb-5"
+					data-bs-toggle="modal"
+					data-bs-target="#myModal">
+					Нажми на меня, чтобы получить подарок!
+				</button>
+			</div>
+			<div class="modal" tabindex="-1" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Инструкция по получению подарка</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p class="text-start text-black">Тебе стоит подождать пару минут!</p>
+							<p class="text-end text-black">Займет пару минуточек</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+								Я поняла!
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<script src="./js/main.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
